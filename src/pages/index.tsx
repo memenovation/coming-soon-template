@@ -79,7 +79,7 @@ export default function Home() {
           </button>
         </form>
         {isSubscribed && (
-          <div className="mt-2 text-rose-500 text-center">
+          <div className="mt-2 text-teal-500 text-center">
             Successfully subscribed!
           </div>
         )}
