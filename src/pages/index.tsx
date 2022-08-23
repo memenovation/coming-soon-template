@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center">
       <Head>
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
         <link rel="icon" href="/favicon.ico" />
@@ -79,7 +79,7 @@ export default function Home() {
           </button>
         </form>
         {isSubscribed && (
-          <div className="mt-2 text-teal-500 text-center">
+          <div className="mt-2 text-indigo-400 text-center">
             Successfully subscribed!
           </div>
         )}
