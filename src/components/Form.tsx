@@ -47,14 +47,14 @@ export const SubmissionForm = ({ onSubmit, submissionStatus }) => {
         <button
           type="submit"
           disabled={submissionStatus.isLoading || submissionStatus.submitted}
-          className="disabled:bg-gray-700 disabled:text-gray-500 disabled:cursor-not-allowed font-bold w-full max-w-full h-12 rounded px-4 py-2 text-gray-50 bg-teal-700
+          className="disabled:bg-gray-700 disabled:text-gray-500 disabled:cursor-not-allowed font-medium w-full max-w-full h-12 rounded px-4 py-2 text-gray-50 bg-teal-700
         hover:bg-teal-600
         focus:outline-none focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-2 focus:ring-teal-600 "
         >
           {submissionStatus?.isLoading && (
             <ImSpinner9 className="animate-spin mb-1 inline mr-3" />
           )}
-          {submissionStatus.submitted ? "Thank you!" : "Register Now"}
+          {submissionStatus?.submitted ? "Thank you!" : "Register Now"}
         </button>
         {submissionStatus?.submitted && (
           <div className="mt-4 text-teal-400 text-center">
