@@ -1,6 +1,6 @@
-# Coming Soon Site Template
+# Nextjs Simple Form Template
 
-This project is the an example of a coming soon site template.
+This project is an example of a simple nextjs form template with basic form fields and API sending data to Airtable.
 
 ## Technologies
 

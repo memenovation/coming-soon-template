@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
+        <title>{process.env.NEXT_PUBLIC_SITE_TITLE || "ABC Company"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

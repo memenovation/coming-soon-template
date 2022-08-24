@@ -2,7 +2,7 @@ export const Content = () => {
   return (
     <>
       <h1 className="text-2xl font-arvo font-bold text-center ">
-        {process.env.NEXT_PUBLIC_H1}
+        {process.env.NEXT_PUBLIC_H1 || "Product Trial Registration"}
       </h1>
       <div className="text-left text-sm mt-5">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
