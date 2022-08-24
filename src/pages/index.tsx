@@ -56,7 +56,7 @@ export default function Home() {
           <Banner />
         </div>
 
-        <div className="wrapper bg-gray-900 rounded-md py-6 sm:py-8 w-full max-w-md sm:max-w-lg px-6 sm:px-8 mt-6 shadow-sm">
+        <div className="wrapper bg-gray-900 rounded-md py-6 sm:py-8 w-full max-w-md sm:max-w-lg px-6 sm:px-8 mt-4 sm:mt-6 shadow-sm">
           <div className="w-full max-w-full mx-auto">
             <Content />
           </div>
