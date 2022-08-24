@@ -28,22 +28,35 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="">
       <Head>
         <title>{process.env.NEXT_PUBLIC_SITE_TITLE}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 pb-20 text-center">
-        <div className="font-arvo font-bold text-3xl lg:text-4xl">
-          Coming Soon
+      <main className="flex flex-col items-center justify-start w-full flex-1 pb-20 pt-8 text-center">
+        <div className="max-w-md w-full">
+          <img
+            className="mx-auto max-w-full w-full h-36 object-cover rounded-md "
+            src="https://images.unsplash.com/photo-1606787366850-de6330128bfc"
+          />
         </div>
-        <SubmissionForm onSubmit={onSubmit} isLoading={isLoading} />
-        {isSubscribed && (
-          <div className="mt-2 text-indigo-400 text-center">
-            Successfully subscribed!
+
+        <div className="bg-gray-900 rounded-md py-8 w-full max-w-md px-8 mt-6 shadow-sm">
+          <div className="w-full max-w-full mx-auto">
+            <h1 className="text-2xl font-arvo font-bold text-center ">
+              {process.env.NEXT_PUBLIC_H1}
+            </h1>
           </div>
-        )}
+          <div className="mt-12 w-full h-full mx-auto flex flex-col justify-center ">
+            <SubmissionForm onSubmit={onSubmit} isLoading={isLoading} />
+            {isSubscribed && (
+              <div className="mt-2 text-indigo-400 text-center">
+                Successfully subscribed!
+              </div>
+            )}
+          </div>
+        </div>
       </main>
     </div>
   );
