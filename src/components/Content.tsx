@@ -4,7 +4,7 @@ export const Content = () => {
       <h1 className="text-2xl font-arvo font-bold text-center ">
         {process.env.NEXT_PUBLIC_H1 || "Product Trial Registration"}
       </h1>
-      <div className="text-left text-sm mt-5">
+      <div className="text-left text-sm mt-5 sm:mt-6">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
