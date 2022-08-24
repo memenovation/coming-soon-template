@@ -51,12 +51,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-start w-full flex-1 py-6 sm:py-8 text-center">
-        <div className="max-w-md w-full">
+      <main className="flex flex-col items-center justify-start w-full flex-1 py-4 sm:py-8 text-center">
+        <div className="max-w-md sm:max-w-lg w-full">
           <Banner />
         </div>
 
-        <div className="bg-gray-900 rounded-md py-8 w-full max-w-md px-8 mt-6 shadow-sm">
+        <div className="wrapper bg-gray-900 rounded-md py-6 sm:py-8 w-full max-w-md sm:max-w-lg px-6 sm:px-8 mt-6 shadow-sm">
           <div className="w-full max-w-full mx-auto">
             <Content />
           </div>
