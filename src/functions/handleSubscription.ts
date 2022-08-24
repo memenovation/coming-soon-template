@@ -8,9 +8,7 @@ export default async function handleSubscription(data) {
       "Content-Type": "application/json",
       Accept: "application/json",
     },
-    data: {
-      email: data.email,
-    },
+    data: data,
   });
   return res.data;
 }

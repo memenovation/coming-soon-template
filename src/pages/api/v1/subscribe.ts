@@ -24,8 +24,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     return;
   }
 
-  const { email } = req.body;
+  const { email, name } = req.body;
   const parsedEmail = email.toString();
+  const parsedName = name.toString();
   const subscription_date = dayjs().format("YYYY/MM/DD");
 
   /* ---------------------------- Airtable configs --------------------------- */
@@ -33,6 +34,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   const tableName = process.env.AIRTABLE_TABLE_NAME;
   const fields = {
     email: parsedEmail,
+    name: parsedName,
     subscription_date: subscription_date,
   };
 
@@ -54,7 +56,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
     return res.status(200).send({ status: "success", result: result });
   } catch (error) {
-    console.log("error", error)
+    console.log("error", error);
     return res.status(404).send({ error: error.message });
   }
 };
