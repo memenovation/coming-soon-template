@@ -5,15 +5,13 @@ import { useState } from "react";
 import { SubmissionForm } from "@components/Form";
 import { Banner } from "@components/Banner";
 import { Content } from "@components/Content";
+import { Complete } from "@components/Complete";
 
 //functions
 import { handleAPI } from "@functions/dataFetching";
 import handleSubscription from "@functions/handleSubscription";
 
 export default function Home() {
-  //loading state for form submission
-  const [isLoading, setLoading] = useState(false);
-
   const [submissionStatus, setSubmissionStatus] = useState({
     isLoading: false,
     submitted: false,
@@ -57,16 +55,24 @@ export default function Home() {
         </div>
 
         <div className="wrapper bg-gray-900 rounded-md py-6 sm:py-8 w-full max-w-md sm:max-w-lg px-6 sm:px-8 mt-4 sm:mt-6 shadow-sm">
-          <div className="w-full max-w-full mx-auto">
-            <Content />
-          </div>
+          {submissionStatus?.submitted ? (
+            <div className="w-full max-w-full mx-auto">
+              <Complete />
+            </div>
+          ) : (
+            <>
+              <div className="w-full max-w-full mx-auto">
+                <Content />
+              </div>
 
-          <div className="mt-8 w-full h-full mx-auto flex flex-col justify-center ">
-            <SubmissionForm
-              onSubmit={onSubmit}
-              submissionStatus={submissionStatus}
-            />
-          </div>
+              <div className="mt-8 w-full h-full mx-auto flex flex-col justify-center ">
+                <SubmissionForm
+                  onSubmit={onSubmit}
+                  submissionStatus={submissionStatus}
+                />
+              </div>
+            </>
+          )}
         </div>
       </main>
     </div>

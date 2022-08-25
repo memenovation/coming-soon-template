@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-gray-800 text-gray-50 font-rubik;
+@layer base {
+  html,
+  body {
+    @apply bg-gray-800 text-gray-50 font-rubik;
+
+    h1 {
+      @apply text-2xl font-arvo font-bold text-center;
+    }
+  }
 }

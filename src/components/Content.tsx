@@ -1,7 +1,7 @@
 export const Content = () => {
   return (
     <>
-      <h1 className="text-2xl font-arvo font-bold text-center ">
+      <h1 className="">
         {process.env.NEXT_PUBLIC_H1 || "Product Trial Registration"}
       </h1>
       <div className="text-left text-sm mt-5 sm:mt-6">
