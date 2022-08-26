@@ -25,6 +25,7 @@ export const SubmissionForm = ({ onSubmit, submissionStatus }) => {
       onSubmit={handleSubmit(onSubmit)}
       className="
         w-full flex flex-col gap-y-7"
+      autoComplete="off"
     >
       <div className="flex flex-col gap-y-3 w-full max-w-full">
         <Input

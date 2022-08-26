@@ -19,7 +19,7 @@ export const Input = ({
           id={name}
           autoComplete="null"
           placeholder={placeholder}
-          className="w-full py-3 outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-base text-gray-800 rounded-sm pl-3 bg-gray-50 placeholder-gray-500"
+          className=" w-full py-3 outline-none focus:ring-2 focus:ring-teal-500 focus:border-teal-500 text-base text-gray-800 rounded-sm pl-3 bg-gray-50 placeholder-gray-500"
         />
       </div>
     </div>

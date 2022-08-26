@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-start w-full flex-1 py-4 sm:py-8 text-center">
+      <main className="flex flex-col items-center justify-start w-full min-h-full flex-1 py-4 sm:py-8 text-center relative">
         <div className="max-w-md sm:max-w-lg w-full">
           <Banner />
         </div>

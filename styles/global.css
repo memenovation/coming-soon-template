@@ -10,5 +10,9 @@
     h1 {
       @apply text-2xl font-arvo font-bold text-center;
     }
+
+    .footerIcons {
+      @apply text-white h-4 w-4;
+    }
   }
 }

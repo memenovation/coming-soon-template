@@ -3,9 +3,11 @@ const imgURL =
 
 export const Banner = () => {
   return (
-    <img
-      className="mx-auto max-w-full w-full h-36 object-cover rounded-md "
-      src={process.env.NEXT_PUBLIC_BANNER_IMG_URL || imgURL}
-    />
+    <>
+      <img
+        className="mx-auto max-w-full w-full h-36 object-cover rounded-md "
+        src={process.env.NEXT_PUBLIC_BANNER_IMG_URL || imgURL}
+      />
+    </>
   );
 };
