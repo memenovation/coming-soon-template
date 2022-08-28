@@ -1,3 +1,9 @@
-# HKMEME brand site
+# Coming Soon Website Template
 
-This project is the frontend of the HKMEME brand site. Currently the site is under construction and only shows a form for newsletters registrations.
+This is a simple template for a coming soon website, with a subscription form which sends data to Airtable
+
+## Technologies
+
+- Nextjs
+- Tailwindcss
+- Airtable
